@@ -1,0 +1,147 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: 
+    linear-gradient(to right, rgba(116, 235, 213, 0.8), rgba(172, 182, 229, 0.8)),
+    url("img.png") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+.container {
+  background: #c3a6b7;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #007bff;
+}
+
+.checkboxes label {
+  display: block;
+  margin: 6px 0;
+  font-weight: 500;
+  color: #444;
+  cursor: pointer;
+}
+
+.checkboxes input[type="checkbox"] {
+  accent-color: #007bff;
+}
+
+.password-box {
+  display: flex;
+  margin-top: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.password-box input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+
+.password-box button {
+  padding: 0 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.password-box button:hover {
+  background: #0056b3;
+}
+
+.bar {
+  height: 10px;
+  background: #e0e0e0;
+  margin-top: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#bar-fill {
+  height: 100%;
+  width: 0%;
+  background-color: #ff4d4d;
+  transition: width 0.4s ease, background-color 0.3s ease;
+}
+
+#strength-text {
+  text-align: center;
+  margin: 8px 0;
+  font-weight: 600;
+  color: #222;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.actions button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.actions button:hover {
+  background: linear-gradient(to right, #2b8adf, #0f65b7);
+}
+
+#toast {
+  display: none;
+  background: #28a745;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
